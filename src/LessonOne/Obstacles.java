@@ -9,4 +9,19 @@ public class Obstacles {
         this.obstaclesValue = obstaclesValue;
     }
 
+    public String getObstaclesName() {
+        return obstaclesName;
+    }
+
+    public void setObstaclesName(String obstaclesName) {
+        this.obstaclesName = obstaclesName;
+    }
+
+    public int getObstaclesValue() {
+        return obstaclesValue;
+    }
+
+    public void setObstaclesValue(int obstaclesValue) {
+        this.obstaclesValue = obstaclesValue;
+    }
 }

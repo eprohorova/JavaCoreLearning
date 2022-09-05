@@ -9,33 +9,26 @@ public class Team {
         this.participants = participants;
     }
 
-    public Team() {
-    }
-
     public void infoParticipant(){
-        System.out.println(teamName + participants);
+        System.out.println(teamName + ":");
+        for (int i = 0; i < participants.length; i++) {
+            System.out.println(participants[i].getNameParticipant());
+        }
     }
-    public void infoTeam(){
-        System.out.println(participants + " Прощли все испытания " );
-    }
+    public void infoTeamResult(){
+        System.out.println("Winners: ");
+        for (int i = 0; i < participants.length; i++) {
+            if (participants[i].getEnduranceParticipant() >= 0) {
+                System.out.println(participants[i].getNameParticipant());
 
-    public String getTeamName() {
-        return teamName;
+            }
+        }
     }
 
     public Participant[] getParticipants() {
         return participants;
     }
 
-    /*
-    public void setTeamName(String teamName) {
-        this.teamName = teamName;
-    }
-
-    public void setParticipants(Participant[] participants) {
-        this.participants = participants;
-    }
-    */
 
 
 

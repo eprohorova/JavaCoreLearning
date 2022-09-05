@@ -15,13 +15,11 @@ public class Main {
         obstacles [1] = new Obstacles("jumpLength", 50);
         obstacles [2] = new Obstacles("throwRange", 50);
 
-        Course course = new Course(100, 50,50);
-        String result = course.doIt(team);
-
-        System.out.println(result);
+        Course course = new Course(obstacles, "Obstacles");
+        Course.doIt(team);
 
         team.infoParticipant();
-        team.infoTeam();
+        team.infoTeamResult();
 
     }
 

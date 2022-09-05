@@ -1,15 +1,12 @@
 package LessonOne;
 
-public class Participant extends Team{
+public class Participant {
     private String nameParticipant;
     private int enduranceParticipant;
 
     public Participant(String nameParticipant, int speedParticipant) {
         this.nameParticipant = nameParticipant;
         this.enduranceParticipant = speedParticipant;
-    }
-
-    public Participant() {
     }
 
     public String getNameParticipant() {
