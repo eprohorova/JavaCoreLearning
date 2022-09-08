@@ -1,7 +1,7 @@
 package LessonTwo;
 
 public class CorrectArray {
-    public void CorrectArray(String[][] array) throws MyArraySizeException, MyArrayDataException{
+    public void correctArray(String[][] array) throws MyArraySizeException, MyArrayDataException{
         int sizeArrayOne = 4;
         int sizeArrayTwo = 4;
         int sum = 0;
