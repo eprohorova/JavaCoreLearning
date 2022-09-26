@@ -1,9 +1,21 @@
 <component name="libraryTable">
   <library name="okio-3.2.0">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../okio-3.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" recursive="false" />
+    <jarDirectory url="jar://$PROJECT_DIR$/../Новая папка/okio-3.2.0.jar!/" recursive="false" type="SOURCES" />
   </library>
 </component>
