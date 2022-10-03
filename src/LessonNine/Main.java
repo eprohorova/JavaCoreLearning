@@ -6,30 +6,30 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        List<House> result = getListOfHouse(3,3);
+        List<Course> result = getListOfHouse(3,3);
         //1 задание
-        result.stream().flatMap(house -> house.getRoomList().stream()).distinct().collect(Collectors.toList());
-        result.stream().flatMap(house -> house.getRoomList().stream()).collect(Collectors.toSet());
+        result.stream().flatMap(course -> course.getRoomList().stream()).distinct().collect(Collectors.toList());
+        result.stream().flatMap(course -> course.getRoomList().stream()).collect(Collectors.toSet());
 
         //2 задание
-        result.stream().sorted((house1,house2) -> house1.getRoomList().size() - house2.getRoomList().size()).limit(3).collect(Collectors.toList());
+        result.stream().sorted((course1, course2) -> course1.getRoomList().size() - course2.getRoomList().size()).limit(3).collect(Collectors.toList());
 
         //3 задание
-        Room paramRoom = new Room("room1");
-        result.stream().filter(house -> house.getRoomList().contains(paramRoom)).collect(Collectors.toList());
+        Student paramStudent = new Student("room1");
+        result.stream().filter(course -> course.getRoomList().contains(paramStudent)).collect(Collectors.toList());
 
         System.out.println();
 
     }
 
-    private static List<House> getListOfHouse(int j, int m){
-        ArrayList<House> result = new ArrayList<>();
+    private static List<Course> getListOfHouse(int j, int m){
+        ArrayList<Course> result = new ArrayList<>();
         for (int i=0; i<j ;i++){
-            ArrayList<Room> rooms = new ArrayList<>();
+            ArrayList<Student> students = new ArrayList<>();
             for (int h=0; h<m ;h++){
-                rooms.add(new Room("room"+h));
+                students.add(new Student("room"+h));
             }
-            result.add(new House("house"+i, rooms));
+            result.add(new Course("house"+i, students));
         }
         return result;
     }

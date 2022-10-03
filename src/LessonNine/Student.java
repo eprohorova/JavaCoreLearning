@@ -2,12 +2,11 @@ package LessonNine;
 
 import java.util.Objects;
 
-public class Room {
+public class Student {
 
-    import java.util.Objects;
     private String name;
 
-    public Room(String name) {
+    public Student(String name) {
         this.name = name;
     }
 
@@ -19,8 +18,8 @@ public class Room {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Room room = (Room) o;
-        return Objects.equals(name, room.name);
+        Student student = (Student) o;
+        return Objects.equals(name, student.name);
     }
 
     @Override
